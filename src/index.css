@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html {
+    font-size: 1.1rem;
+  }
+
+  .shadow-full::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  :is(a, button, input, textarea, select, details, summary):focus-visible {
+    outline: #696969 solid 0.188rem;
+    outline-offset: 0.188rem;
+  }
+
+  .background-gradient {
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+      0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(
+        18% 28% at 24% 50%,
+        #cefaff6b 7%,
+        #073aff00 100%
+      ),
+      radial-gradient(42% 53% at 33% 82%, #e15a511c 7%, #073aff00 100%),
+      radial-gradient(31% 43% at 7% 98%, #ffffff5e 24%, #073aff00 100%),
+      radial-gradient(21% 37% at 76% 23%, #4880ff3b 24%, #073aff00 100%),
+      linear-gradient(312deg, #cfb8ffc2 0%, #4880ff9e 100%);
+  }
+}
