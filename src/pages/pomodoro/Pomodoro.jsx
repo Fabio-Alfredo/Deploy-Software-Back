@@ -3,7 +3,7 @@ import PageContainer from "../../containers/home/PageContainer";
 import { Fab, Grid2, Tab, Tabs } from "@mui/material";
 import Title from "../../components/generic/Title";
 import { AnimatePresence } from "framer-motion";
-import { Counter } from "../../components/pomodoro/counter";
+import { Counter } from "../../components/pomodoro/Counter";
 import PlayArrowOutlinedIcon from "@mui/icons-material/PlayArrowOutlined";
 import ReplayIcon from "@mui/icons-material/Replay";
 import SectionIntro from "../../components/generic/SectionIntro";
