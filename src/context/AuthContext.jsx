@@ -28,7 +28,6 @@ export const AuthProvider = ({ children }) => {
     const user = await register(name, email, password);
 
     if (user) {
-      setUser(user);
       navigate(VIEWS.login);
     }
   };
